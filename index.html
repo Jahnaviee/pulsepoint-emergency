@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PulsePoint Emergency | Your Health, Our Priority</title>
+    <meta name="description" content="PulsePoint Emergency hospital services, first aid information, doctors and appointment requests.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span aria-hidden="true">✚</span> PulsePoint
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="firstaid.html">First Aid</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR HEALTH, OUR PRIORITY</p>
+
+                <h1>
+                    Compassionate Care.<br>
+                    When It Matters Most.
+                </h1>
+
+                <p>
+                    Welcome to PulsePoint Emergency. Explore our healthcare
+                    services, learn about first aid and request an appointment
+                    with our medical team.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary">
+                        Book an Appointment
+                    </a>
+
+                    <a href="services.html" class="btn btn-secondary">
+                        Explore Services
+                    </a>
+                </div>
+
+                <p class="emergency-notice">
+                    For a life-threatening emergency, contact your local
+                    emergency services immediately. In India, call 112.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT WE OFFER</p>
+
+                <h2>Healthcare Made Easier</h2>
+
+                <p>
+                    Explore our resources to help you make informed
+                    healthcare decisions.
+                </p>
+            </div>
+
+            <div class="service-cards">
+
+                <article class="service-card">
+                    <h3>Medical Services</h3>
+
+                    <p>
+                        Explore our medical departments and healthcare services.
+                    </p>
+
+                    <a href="services.html">View Services →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>Meet Our Doctors</h3>
+
+                    <p>
+                        Learn about the doctors and departments available
+                        at our hospital.
+                    </p>
+
+                    <a href="doctors.html">Meet the Team →</a>
+                </article>
+
+                <article class="service-card">
+                    <h3>First Aid Guide</h3>
+
+                    <p>
+                        Read basic first-aid information for common emergencies.
+                    </p>
+
+                    <a href="firstaid.html">Learn First Aid →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section class="appointment-section" id="appointment">
+
+            <div class="appointment-layout">
+
+                <!-- Appointment Information -->
+                <div class="appointment-info">
+                    <p class="eyebrow">TAKE THE NEXT STEP</p>
+
+                    <h2>Request an Appointment</h2>
+
+                    <p>
+                        Complete the form to submit an appointment request.
+                        This demonstration website will validate your details
+                        and return a confirmation from the server.
+                    </p>
+
+                    <div class="appointment-benefit">
+                        <span class="benefit-icon" aria-hidden="true">✓</span>
+
+                        <div>
+                            <h3>Simple Registration</h3>
+
+                            <p>
+                                Submit your preferred department, date and time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="appointment-benefit">
+                        <span class="benefit-icon" aria-hidden="true">✚</span>
+
+                        <div>
+                            <h3>Healthcare Information</h3>
+
+                            <p>
+                                Explore our website to learn about available services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="appointment-note">
+                        Submitting this form is a request only. It does not
+                        confirm a real appointment with a hospital.
+                    </p>
+                </div>
+
+                <!-- Appointment Form -->
+                <div class="appointment-form-card">
+
+                    <div class="appointment-form-heading">
+                        <h2>Appointment Details</h2>
+
+                        <p>Fields marked * are required.</p>
+                    </div>
+
+                    <form id="appointment-form">
+
+                        <div class="appointment-fields">
+
+                            <!-- Patient Name -->
+                            <div class="form-group">
+                                <label for="patientName">Full Name *</label>
+
+                                <input
+                                    type="text"
+                                    id="patientName"
+                                    name="patientName"
+                                    placeholder="Enter your full name"
+                                    minlength="2"
+                                    maxlength="100"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="10-digit mobile number"
+                                    inputmode="numeric"
+                                    pattern="[0-9]{10}"
+                                    maxlength="10"
+                                    autocomplete="tel"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                >
+                            </div>
+
+                            <!-- Department -->
+                            <div class="form-group">
+                                <label for="department">Department *</label>
+
+                                <select
+                                    id="department"
+                                    name="department"
+                                    required
+                                >
+                                    <option value="">Select a department</option>
+                                    <option value="General Medicine">General Medicine</option>
+                                    <option value="Cardiology">Cardiology</option>
+                                    <option value="Pediatrics">Pediatrics</option>
+                                    <option value="Orthopedics">Orthopedics</option>
+                                    <option value="Obstetrics and Gynecology">Obstetrics and Gynecology</option>
+                                    <option value="Outpatient Department">Outpatient Department</option>
+                                </select>
+                            </div>
+
+                            <!-- Appointment Date -->
+                            <div class="form-group">
+                                <label for="appointmentDate">Preferred Date *</label>
+
+                                <input
+                                    type="date"
+                                    id="appointmentDate"
+                                    name="appointmentDate"
+                                    required
+                                >
+                            </div>
+
+                            <!-- Appointment Time -->
+                            <div class="form-group">
+                                <label for="appointmentTime">Preferred Time *</label>
+
+                                <select
+                                    id="appointmentTime"
+                                    name="appointmentTime"
+                                    required
+                                >
+                                    <option value="">Select a time</option>
+                                    <option value="09:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                </select>
+                            </div>
+
+                            <!-- Reason -->
+                            <div class="form-group full-width">
+                                <label for="reason">
+                                    Reason for Appointment (Optional)
+                                </label>
+
+                                <textarea
+                                    id="reason"
+                                    name="reason"
+                                    rows="3"
+                                    maxlength="1000"
+                                    placeholder="Briefly describe your reason for visiting"
+                                ></textarea>
+                            </div>
+
+                        </div>
+
+                        <!-- Consent -->
+                        <div class="appointment-consent">
+                            <input
+                                type="checkbox"
+                                id="appointment-consent"
+                                name="consent"
+                                required
+                            >
+
+                            <label for="appointment-consent">
+                                I agree to submit these details for this
+                                demonstration appointment request. *
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button
+                            type="submit"
+                            class="appointment-submit"
+                        >
+                            Submit Appointment Request
+                        </button>
+
+                        <!-- Backend Response Message -->
+                        <p
+                            id="appointment-status"
+                            role="status"
+                            aria-live="polite"
+                        ></p>
+
+                        <!-- Disclaimer -->
+                        <p class="appointment-disclaimer">
+                            Demo only: requests are not permanently stored
+                            and are not real hospital bookings. Do not enter
+                            real medical or sensitive personal information.
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            &copy; <span id="current-year"></span> PulsePoint Emergency.
+            Your health, our priority.
+        </p>
+
+        <p>
+            This is an educational demonstration website, not a real
+            emergency medical service.
+        </p>
+    </footer>
+
+</body>
+</html>

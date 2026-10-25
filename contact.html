@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PulsePoint Emergency</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a class="logo" href="index.html">PulsePoint <span>Emergency</span></a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="firstaid.html">First Aid</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+<section class="page-hero">
+    <div class="container">
+        <p class="eyebrow">WE ARE HERE TO HELP</p>
+        <h1>Contact PulsePoint Emergency</h1>
+        <p>Find sample contact information, learn about appointments, or send a demonstration enquiry.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="card-grid">
+            <article class="card">
+                <h2>Hospital Address</h2>
+                <p><strong>PulsePoint Emergency Hospital</strong></p>
+                <p>Main Road, Malkajgiri, Hyderabad, Telangana, India</p>
+                <p><em>Example location for demonstration only; not a verified hospital address.</em></p>
+                <a href="https://www.google.com/maps/search/hospitals+in+Malkajgiri+Hyderabad/" target="_blank" rel="noopener noreferrer">Explore nearby hospitals on Google Maps</a>
+            </article>
+
+            <article class="card">
+                <h2>Emergency Help</h2>
+                <p><strong>India emergency number: 112</strong></p>
+                <p>For a serious or life-threatening emergency, call the appropriate emergency service immediately.</p>
+                <p>Hospital-specific emergency numbers and entrance details have not been verified.</p>
+                <a class="btn btn-emergency" href="tel:112">Call 112</a>
+            </article>
+
+            <article class="card">
+                <h2>Reception &amp; Appointments</h2>
+                <p><strong>Sample phone:</strong> +91 90000 12345</p>
+                <p><strong>Sample email:</strong> info@example.com</p>
+                <p>These are example contact details, not confirmed hospital contacts. Replace them before publishing.</p>
+            </article>
+
+            <article class="card">
+                <h2>Hospital Timings</h2>
+                <p><strong>Sample OPD hours:</strong> Monday–Saturday, 9:00 AM–5:00 PM.</p>
+                <p><strong>Emergency department:</strong> Confirm availability directly with the hospital.</p>
+                <p>Consultation schedules may vary by specialty, doctor, and public holidays.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section-soft">
+    <div class="container narrow-container">
+        <h2>Send an Enquiry</h2>
+        <p>Use this sample form to demonstrate how visitors can contact the hospital. It does not send messages to a real hospital.</p>
+
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Enquiry Type</label>
+                <select id="topic" name="topic" required>
+                    <option value="">Select an enquiry type</option>
+                    <option value="appointments">Appointments</option>
+                    <option value="services">Medical Services</option>
+                    <option value="doctors">Doctor Availability</option>
+                    <option value="timings">Hospital Timings</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your enquiry here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Enquiry</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© <span class="current-year"></span> PulsePoint Emergency. Demonstration website.</p>
+        <p>Sample contact information must be replaced with verified details.</p>
+    </div>
+</footer>
+</body>
+</html>
